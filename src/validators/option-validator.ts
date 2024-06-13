@@ -14,11 +14,11 @@ export const MODELS = {
     name: "models",
     options: [
         {label: "iPhone X", value: "iphonex"},
-        {label: "iPhone 11", value: "iphon11"},
-        {label: "iPhone 12", value: "iphon12"},
-        {label: "iPhone 13", value: "iphon13"},
-        {label: "iPhone 14", value: "iphon14"},
-        {label: "iPhone 15", value: "iphon15"},
+        {label: "iPhone 11", value: "iphone11"},
+        {label: "iPhone 12", value: "iphone12"},
+        {label: "iPhone 13", value: "iphone13"},
+        {label: "iPhone 14", value: "iphone14"},
+        {label: "iPhone 15", value: "iphone15"},
     ]
 } as const
 
