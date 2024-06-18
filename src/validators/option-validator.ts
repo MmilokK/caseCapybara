@@ -25,7 +25,7 @@ export const MODELS = {
 export const MATERIALS = {
     name: "material",
     options: [
-        {label: "Селикон", value: "silicone", description: undefined, price: PRODUCT_PRICES.material.silicone},
+        {label: "Силикон", value: "silicone", description: undefined, price: PRODUCT_PRICES.material.silicone},
         {label: "Мягкий поликарбонат", value: "polycarbonate", description: "Защитное покрытие от царапин", price: PRODUCT_PRICES.material.polycarbonate}
     ]
 } as const
