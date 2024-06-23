@@ -42,7 +42,7 @@ const OrderReceivedEmail = ({
                             <Text style={global.paragraphWithBold}>Номер заказа</Text>
                             <Text style={track.number}>{orderId}</Text>
                         </Column>
-                        <Column>
+                        <Column style={{marginLeft: 20}}>
                             <Text style={global.paragraphWithBold}>Дата заказа</Text>
                             <Text style={track.number}>{orderDate}</Text>
                         </Column>

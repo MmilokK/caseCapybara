@@ -9,7 +9,7 @@ const LoginModal = ({ isOpen, setIsOpen }: {
     setIsOpen: Dispatch<SetStateAction<boolean>>
 }) => {
     return <Dialog onOpenChange={setIsOpen} open={isOpen}>
-        <DialogContent className="absolute z-[9999999]">
+        <DialogContent className="fixed z-[9999999]">
             <DialogHeader>
                 <div className="relative mx-auto w-24 h-24 mb-2">
                     <Image src='/capybara-1.png' alt="Капибара" className="object-contain" fill />

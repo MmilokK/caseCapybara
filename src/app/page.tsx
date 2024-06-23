@@ -1,3 +1,4 @@
+"use client"
 import MaxWidthWrapper from "@/components/MaxWidthWrapper";
 import Image from "next/image";
 import { ArrowRight, Check, Star } from 'lucide-react'
@@ -5,9 +6,15 @@ import Phone from "@/components/Phone";
 import { Icons } from "@/components/Icons";
 import { Reviews } from "@/components/Reviews";
 import Link from "next/link";
-import { buttonVariants } from "@/components/ui/button";
+import { Button, buttonVariants } from "@/components/ui/button";
+import { useRouter } from "next/navigation";
+import { useState } from "react";
+
+
 
 export default function Home() {
+  const router = useRouter() 
+  const [loading, setLoading] = useState(false)
   return (
     <div className="bg-slate-50">
       <section>
@@ -184,12 +191,14 @@ export default function Home() {
             </li>
 
             <div className="flex justify-center">
-              <Link className={buttonVariants({
+              <Button isLoading = {loading} disabled ={loading} loadingText="Загрузка" className={buttonVariants({
                 size: 'lg',
                 className: 'mx-auto mt-8'
-              })} href = '/configure/upload'>
+              })} onClick = {()=> {
+                router.push('/configure/upload')
+                setLoading(true)}}>
                 Создай свой собственный чехол прямо сейчас <ArrowRight className="h-4 w-4 ml-1.5" />
-              </Link>
+              </Button>
             </div>
           </ul>
         </MaxWidthWrapper>
