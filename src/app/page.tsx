@@ -5,7 +5,6 @@ import { ArrowRight, Check, Star } from 'lucide-react'
 import Phone from "@/components/Phone";
 import { Icons } from "@/components/Icons";
 import { Reviews } from "@/components/Reviews";
-import Link from "next/link";
 import { Button, buttonVariants } from "@/components/ui/button";
 import { useRouter } from "next/navigation";
 import { useState } from "react";
